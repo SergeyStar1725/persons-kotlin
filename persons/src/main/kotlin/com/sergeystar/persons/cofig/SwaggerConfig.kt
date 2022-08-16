@@ -14,7 +14,7 @@ class SwaggerConfig {
     fun api(): Docket {
         return Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.sergeystar.testwebapplication.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("com.sergeystar.persons.controllers"))
                 .paths(PathSelectors.any())
                 .build()
     }
